@@ -24,7 +24,7 @@ jobs:
  
     - name: Zip artifact
       run: |
-        zip -r SpringBootForm-1.0.zip target/SpringBootForm-1.0.jar Procfile
+        zip -r SpringBootForm-1.0.zip target/SpringBootForm-1.0.jar
  
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
