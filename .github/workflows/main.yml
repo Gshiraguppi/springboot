@@ -38,8 +38,6 @@ jobs:
       with:
         application_name: springboot
         environment_name: Springboot-env
-        version_label: V1
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        version_label: ${{ github.sha }
         region: ${{ secrets.AWS_REGION }}
         deployment_package: SpringBootForm-1.0.zip
